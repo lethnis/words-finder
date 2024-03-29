@@ -6,6 +6,10 @@ import filters as F
 def main():
     """Main loop of the program. Creates a filter inputs and applies the to russian nouns"""
 
+    st.set_page_config(page_title="Искатор А-42", layout="wide", page_icon=":face_with_monocle:")
+
+    st.text("Программа для поиска слов по фильтрам. Исходный код и пример: https://github.com/lethnis/words-finder")
+
     # load all words into list
     words = open("russian_nouns.txt", encoding="utf-8").read().split("\n")
 
